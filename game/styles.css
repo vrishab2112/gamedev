@@ -1,0 +1,177 @@
+.but {
+  display: inline-flex; /* Use Flexbox to align buttons in a row */
+  gap: 10px; /* Optional: add space between buttons */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  position:absolute;
+  background-image: url('./background6.jpg');
+ 
+  
+  height: 500px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media(max-width :1200px){
+  .body{
+    background-position: center;
+  }
+}
+.button {
+  display: inline-flex;
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  
+  color: white; /* White text */
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Shadow effect */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19); /* Larger shadow on hover */
+}
+
+button:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); /* Smaller shadow when clicked */
+  transform: translateY(2px); /* Slightly move the button down when clicked */
+}
+
+.game {
+  overflow: hidden;
+  position: relative;
+}
+
+
+
+.nftTotalScore {
+  padding: 10px ;
+  position: absolute;
+  font-size: 3vmin;
+  right: 30vmin;
+  top: 4vmin;
+}
+
+.gweiTotalScore {
+  padding: 3px ;
+  position: absolute;
+  font-size: 3vmin;
+  right: 30vmin;
+  top: 1vmin;
+}
+
+.score {
+  padding: 3px ;
+  position: absolute;
+  font-size: 3vmin;
+  right: 1vmin;
+  top: 1vmin;
+}
+
+.button1 {
+  background-color: antiquewhite;
+  padding: 0px 8px 0px 8px;
+  position: absolute;
+  font-size: 3vmin;
+  left: 1vmin;
+  top: 1vmin;
+}
+
+.button2 {
+  background-color: antiquewhite;
+  padding: 0px 8px 0px 8px;
+  
+  position: absolute;
+  font-size: 3vmin;
+  left: 1vmin;
+  top: 6vmin;
+}
+
+.button3 {
+  background-color: antiquewhite;
+  padding: 0px 8px 0px 8px;
+    
+  position: absolute;
+  font-size: 3vmin;
+  left: 1vmin;
+  top: 12vmin;
+}
+
+
+.score1 {
+  padding: 10px ;
+  position: absolute;
+  font-size: 3vmin;
+  right: 1vmin;
+  top: 4vmin;
+}
+
+
+.start-screen {
+  position: absolute;
+  font-size: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  --left: 0;
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  bottom: -100;
+  left: calc(var(--left) * 1%)
+}
+
+.player {
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.obstacle {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 30%;
+  bottom: 0;
+}
+
+.nft {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 30%;
+  bottom: 100px;
+}
+
+
+
+
+.content {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the background */
+  padding: 20px;
+}
